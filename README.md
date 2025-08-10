@@ -20,7 +20,7 @@ I am <b>not responsible</b> of your usage of the mc-MetalDetector, keep in mind 
 
 ## 📚 Usage
 
-Run this script in Minecraft by typing `\metaldetector` in the chat. Notice that this is a backslash "\\" not an usual slash "/"
+Run this script in Minecraft by typing `\metaldetector` in the chat. Notice that this is a backslash "\\" not a usual slash "/"
 
 ##
 Displays the generic help message
@@ -35,21 +35,21 @@ Overall basic usage is split in 3 arguments: the `command`, the `mode` and the `
 \metaldetector <command> <mode> <ore>
 ```
 
-For now, there is only one possible `command` which is `start`, so every use of the MetalDetector should begin like following <br> *Note that you could also replace `start` by `s`*
+For now, there is only one possible `command` which is `start`, so, every use of the MetalDetector should begin as follows <br> *Note that you could also replace `start` by `s`*
 
 ```bash
 \metaldetector start <mode> <ore>
 ```
 
-Then there are 3 different `modes` that modifies the behavior of the MetalDetector:
+Then there are 3 different `modes` that modify the behavior of the MetalDetector:
 
-- `check` : It will check for a specific ore in your area one time, then will stop. Mostly used to perform a quick single check-up of your area
+- `check` : It will check for a specific ore in your area one time, then will stop. Mostly used to perform a quick single check of your area
   
-- `radar` : It will keep checking for a specific ore around you until you press a *keybind* (`CTRL + M` by default). If you get too far from a detected ore, this ore will not show-up
+- `radar` : It will keep checking for a specific ore around you until you press a *keybind* (`CTRL + M` by default). If you get too far from a detected ore, this ore will not show up
   
-- &nbsp;`map`&nbsp;&nbsp; : Same as the `radar` mode, but will keep in memory ores that were previously within range, until you mine it of course. Useful when travelling at high speed for example
+- &nbsp;`map`&nbsp;&nbsp; : Same as the `radar` mode, but will keep in memory ores that were previously within range, until you mine it, of course. Useful when traveling at high speed for example
 
-So the command will be composed as following
+So the command will be composed as follows
 
 ```bash
 \metaldetector start check <ore>
@@ -59,7 +59,7 @@ So the command will be composed as following
 \metaldetector start map <ore>
 ```
 
-Each mode has a "shortcut" version of itself; For example, the `check` mode could also be written as `c`, `1` or `single`
+Each mode has a "shortcut" version of itself; For example, the `check` mode could also be written as `c`, `1`, or `single`
 
 ```bash
 \metaldetector s c <ore>
@@ -79,7 +79,7 @@ And last but not least, you will have to specify an `ore` to search for, or an a
 \metaldetector s c diamond
 ```
 
-Like the other arguments, there are shortcuts versions and/or aliases for each `ore` <br> *Those are generally speaking the three first characters of the `ore` (e.g: `diamond` could be written `dia`)*
+As with the other arguments, there are shortcut versions and/or aliases for each `ore` <br> *These are, generally speaking, the first three characters of the `ore` (e.g: `diamond` could be written `dia`)*
 
 Shortcut versions of `ores`:
 
@@ -107,15 +107,15 @@ Shortcut versions of `ores`:
   
 - `nether` : *None*
 
-As you can see, you can also specify a dimension so it will only scan for `ores` that are generated in this specific dimension
+As you can see, you can also specify a dimension, so it will only scan for `ores` that are generated in this specific dimension
 
 ```
 \metaldetector s c overworld
 ```
 
-By default, leaving an argument with a blank value after the `start` command will lead to the MetalDetector searching for netherite a single time ;)
+By default, leaving an argument empty after the `start` command will lead to the MetalDetector searching for netherite a single time ;)
 
-All those default values and settings can be changed anytime at the <b>[line 255](https://github.com/M4elstr0m/mc-MetalDetector/blob/main/metaldetector.py#L225)</b> of the `metaldetector.py`
+All these default values and settings can be changed anytime at the <b>[line 255](https://github.com/M4elstr0m/mc-MetalDetector/blob/main/metaldetector.py#L225)</b> of the `metaldetector.py`
 
 To search for anything else than ores, please use <b>[mc-megascan](https://github.com/M4elstr0m/mc-megascan/)</b>
 
